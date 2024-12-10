@@ -1,4 +1,4 @@
-package challenge.bbb.bbb;
+package challenge.bbb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

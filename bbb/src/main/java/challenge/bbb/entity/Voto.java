@@ -1,11 +1,8 @@
 package challenge.bbb.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -13,6 +10,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 public class Voto {
 
     @Id
@@ -22,5 +20,7 @@ public class Voto {
     private LocalDateTime dataHora;
 
     @ManyToOne
+    @JoinColumn(name = "id_candidato")
     private Candidato candidato;
+
 }

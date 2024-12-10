@@ -1,4 +1,4 @@
-INSERT INTO candidatos (nome)
-VALUE ('Joao'),
-      ('Maria'),
-      ('Carlos');
+INSERT INTO candidato(nome)
+VALUES ('João')
+       ('Maria')
+       ('Carlos');
